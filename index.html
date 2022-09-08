@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 1: Một gia đình có 3 bố con trong đó tuổi em kém tuổi anh 3 tuổi. Tuổi của bố gấp 6 lần tuổi anh-->
+<!--. Viết chương trình nhập vào tuổi của em in ra tuổi của anh và tuổi của bố.-->
+<body>
+<label>   Hãy nhập số tuổi người em</label> <br>
+<input id="nhap" type="text">
+<button onclick="age()">Tính tuổi</button>
+<h1 id="hienThi"></h1>
+<script>
+    function age(){
+        let tuoiEm = +document.getElementById('nhap').value
+        let tinhTuoiAnh = tuoiEm+3
+        let tinhTuoiBo =  (tuoiEm+3)*6
+        document.getElementById('hienThi').innerHTML= "Số tuổi của người anh là : "+tinhTuoiAnh+" tuổi"
+            + "  Số tuổi của người bố là : "+tinhTuoiBo+" tuổi"
+
+    }
+</script>
+
+</body>
+</html>
